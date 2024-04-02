@@ -29,17 +29,35 @@ const botaoEx03 = document.querySelector('#btnEx03')
 
 botaoEx03.addEventListener('click', () => {
     resultadoEx03.innerText = `Resultado: A média aritmética entre ${nota1.value} e ${nota2.value} é ${(Number(nota1.value) + Number(nota2.value)) / 2}`
+
+    nota1.value = ''
+    nota2.value = ''
 })
 
 //Exercício 04-----------------------------------
+const prova1 = document.querySelector('#prova1')
+const prova2 = document.querySelector('#prova2')
+const prova3 = document.querySelector('#prova3')
+const resultadoEx04 = document.querySelector('#resEx04')
+const botaoEx04 = document.querySelector('#btnEx04')
 
+botaoEx04.addEventListener('click', () => {
+    const mediaProva1 = prova1.value * 2
+    const mediaProva2 = prova2.value * 4
+    const mediaProva3 = prova3.value * 6
 
+    resultadoEx04. innerText = `A média ponderada entre as notas é ${((mediaProva1 + mediaProva2 + mediaProva3) / 12).toFixed(0)}`
 
-
-
-
-
-
+    prova1.value = ''
+    prova2.value = ''
+    prova3.value = ''
+})
 
 //Exercício 05-----------------------------------
+
+
+
+
+
+
 //Exercício 06-----------------------------------
