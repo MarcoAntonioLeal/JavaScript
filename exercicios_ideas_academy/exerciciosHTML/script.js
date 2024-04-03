@@ -60,84 +60,83 @@ const botaoEx05 = document.querySelector('#btnEx05')
 
 botaoEx05.addEventListener('click', () => {
     if(salario.value < 500) {
-        resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.15).toFixed(0)},00`
+        resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.15).toFixed(2)}`
 
     } else if (salario.value <= 1000) {
-        resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.1).toFixed(0)},00`
+        resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.1).toFixed(2)}`
     } else {
-        resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.05).toFixed(0)},00`
+        resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.05).toFixed(2)}`
     }
     salario.value = ''
 
 })
 
-/*----------------------Parte 2-----------------------------*/
+document.querySelector('#btnApagar').addEventListener('click', () => {
+   resultadoEx01.innerText = 'Resultado:' 
+   resultadoEx02.innerText = 'Resultado:' 
+   resultadoEx03.innerText = 'Resultado:' 
+   resultadoEx04.innerText = 'Resultado:' 
+   resultadoEx05.innerText = 'Resultado:' 
+})
 
+/*----------------------Parte 2-----------------------------*/
 
 //Exercício 01-----------------------------------
 const novoSalario = document.querySelector('#meuSalario')
 const botaoEx01Console = document.querySelector('#btnEx01console')
 
 botaoEx01Console.addEventListener('click', () => {
-    console.log('não está funcionado')
     if(novoSalario.value < 500) {
-        console.log('oi')
+        console.log(`Seu novo salário é R$ ${(novoSalario.value * 1.15).toFixed(2)}`)
     } else if (novoSalario.value <= 1000) {
-        console.log('ola')
+        console.log(`Seu novo salário é R$ ${(novoSalario.value * 1.1).toFixed(2)}`)
     } else {
-        console.log('Tudo bem')
+        console.log(`Seu novo salário é R$ ${(novoSalario.value * 1.05).toFixed(2)}`)
     }
-    
     novoSalario.value = ''
 })
 
-
-
-
-
-
-//Exercício 01-----------------------------------
+//Exercício 02-----------------------------------
 const n1 = document.querySelector('#n1')
 const n2 = document.querySelector('#n2')
-const resultadoEx06 = document.querySelector('#resEx06')
-const botaoEx06 = document.querySelector('#btnEx06')
+const botaoEx02Console = document.querySelector('#btnEx02console')
 
-botaoEx06.addEventListener('click', () => {
+botaoEx02Console.addEventListener('click', () => {
     const mediaNota = (Number(n1.value) + Number(n2.value)) / 2
     
     if(mediaNota == 10) {
-        return resultadoEx06.innerText = `Resultado: Nota: ${mediaNota} → Aprovado com Distinção`
+        console.log(`Nota: ${mediaNota} → Aprovado com Distinção`)
     } else if(mediaNota >= 7) {
-        return resultadoEx06.innerText = `Resultado: Nota: ${mediaNota} → Aprovado`
+        console.log(`Nota: ${mediaNota} → Aprovado`)
     } else {
-        return resultadoEx06.innerText = `Resultado: Nota: ${mediaNota} → Reprovado`
+        console.log(`Nota: ${mediaNota} → Reprovado`)
     }
+    n1.value = ''
+    n2.value = ''
 })
 
-//Exercício 07-----------------------------------
+//Exercício 03-----------------------------------
 const numero1 = document.querySelector('#numero1')
 const numero2 = document.querySelector('#numero2')
 const numero3 = document.querySelector('#numero3')
-const resultadoEx07 = document.querySelector('#resEx07')
-const botaoEx07 = document.querySelector('#btnEx07')
+const botaoEx03Console = document.querySelector('#btnEx03console')
 
-botaoEx07.addEventListener('click', () => {
+botaoEx03Console.addEventListener('click', () => {
     if(numero1.value > numero2.value && numero1.value > numero3.value) {
-        return resultadoEx07.innerText = `Resultado: O maior número é o ${numero1.value}`
+        console.log(`O maior número é o ${numero1.value}`)
 
     } else if(numero2.value > numero1.value && numero2.value > numero3.value) {
-        return resultadoEx07.innerText = `Resultado: O maior número é o ${numero2.value}`
+        console.log(`O maior número é o ${numero2.value}`)
         
     } else {
-        return  resultadoEx07.innerText = `Resultado: O maior número é o ${numero3.value}`
+        console.log(`O maior número é o ${numero3.value}`)
     }
-
     numero1.value = ''
     numero2.value = ''
     numero3.value = ''
 })
 
+//Exercício 04-----------------------------------
 
 
-//Exercício 08-----------------------------------
-//Exercício 09-----------------------------------
+//Exercício 05-----------------------------------
