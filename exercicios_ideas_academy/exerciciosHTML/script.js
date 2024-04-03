@@ -46,7 +46,7 @@ botaoEx04.addEventListener('click', () => {
     const mediaProva2 = prova2.value * 4
     const mediaProva3 = prova3.value * 6
 
-    resultadoEx04. innerText = `A média ponderada entre as notas é ${((mediaProva1 + mediaProva2 + mediaProva3) / 12).toFixed(0)}`
+    resultadoEx04. innerText = `Resultado: A média ponderada entre as notas é ${((mediaProva1 + mediaProva2 + mediaProva3) / 12).toFixed(0)}`
 
     prova1.value = ''
     prova2.value = ''
@@ -54,10 +54,65 @@ botaoEx04.addEventListener('click', () => {
 })
 
 //Exercício 05-----------------------------------
+const salario = document.querySelector('#salario')
+const resultadoEx05 = document.querySelector('#resEx05')
+const botaoEx05 = document.querySelector('#btnEx05')
 
+botaoEx05.addEventListener('click', () => {
+    if(salario.value < 500) {
+        return resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.15).toFixed(0)},00`
 
+    } else if (salario.value <= 1000) {
+        return resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.1).toFixed(0)},00`
+    } else {
+        return resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.05).toFixed(0)},00`
+    }
+})
 
-
-
+salario.value = ''
 
 //Exercício 06-----------------------------------
+const n1 = document.querySelector('#n1')
+const n2 = document.querySelector('#n2')
+const resultadoEx06 = document.querySelector('#resEx06')
+const botaoEx06 = document.querySelector('#btnEx06')
+
+botaoEx06.addEventListener('click', () => {
+    const mediaNota = (Number(n1.value) + Number(n2.value)) / 2
+    
+    if(mediaNota == 10) {
+        return resultadoEx06.innerText = `Resultado: Nota: ${mediaNota} → Aprovado com Distinção`
+    } else if(mediaNota >= 7) {
+        return resultadoEx06.innerText = `Resultado: Nota: ${mediaNota} → Aprovado`
+    } else {
+        return resultadoEx06.innerText = `Resultado: Nota: ${mediaNota} → Reprovado`
+    }
+})
+
+//Exercício 07-----------------------------------
+const numero1 = document.querySelector('#numero1')
+const numero2 = document.querySelector('#numero2')
+const numero3 = document.querySelector('#numero3')
+const resultadoEx07 = document.querySelector('#resEx07')
+const botaoEx07 = document.querySelector('#btnEx07')
+
+botaoEx07.addEventListener('click', () => {
+    if(numero1.value > numero2.value && numero1.value > numero3.value) {
+        return resultadoEx07.innerText = `Resultado: O maior número é o ${numero1.value}`
+
+    } else if(numero2.value > numero1.value && numero2.value > numero3.value) {
+        return resultadoEx07.innerText = `Resultado: O maior número é o ${numero2.value}`
+        
+    } else {
+        return  resultadoEx07.innerText = `Resultado: O maior número é o ${numero3.value}`
+    }
+
+    numero1.value = ''
+    numero2.value = ''
+    numero3.value = ''
+})
+
+
+
+//Exercício 08-----------------------------------
+//Exercício 09-----------------------------------
