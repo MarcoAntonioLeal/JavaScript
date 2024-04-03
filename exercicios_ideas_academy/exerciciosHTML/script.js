@@ -81,11 +81,11 @@ const botaoEx01Console = document.querySelector('#btnEx01console')
 botaoEx01Console.addEventListener('click', () => {
     console.log('não está funcionado')
     if(novoSalario.value < 500) {
-        console.log = ('oi')
+        console.log('oi')
     } else if (novoSalario.value <= 1000) {
-        console.log = ('ola')
+        console.log('ola')
     } else {
-        console.log = ('Tudo bem')
+        console.log('Tudo bem')
     }
     
     novoSalario.value = ''
