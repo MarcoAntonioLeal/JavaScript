@@ -60,18 +60,42 @@ const botaoEx05 = document.querySelector('#btnEx05')
 
 botaoEx05.addEventListener('click', () => {
     if(salario.value < 500) {
-        return resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.15).toFixed(0)},00`
+        resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.15).toFixed(0)},00`
 
     } else if (salario.value <= 1000) {
-        return resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.1).toFixed(0)},00`
+        resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.1).toFixed(0)},00`
     } else {
-        return resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.05).toFixed(0)},00`
+        resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.05).toFixed(0)},00`
     }
+    salario.value = ''
+
 })
 
-salario.value = ''
+/*----------------------Parte 2-----------------------------*/
 
-//Exercício 06-----------------------------------
+
+//Exercício 01-----------------------------------
+const novoSalario = document.querySelector('#salario')
+const botaoEx01Console = document.querySelector('#btnEx01console')
+
+botaoEx05.addEventListener('click', () => {
+    if(salario.value < 500) {
+        console.log = (`Resultado: Seu novo salário é R$ ${(salario.value * 1.15).toFixed(0)},00`)
+
+    } else if (salario.value <= 1000) {
+        console.log = (`Resultado: Seu novo salário é R$ ${(salario.value * 1.1).toFixed(0)},00`)
+    } else {
+        console.log = (`Resultado: Seu novo salário é R$ ${(salario.value * 1.05).toFixed(0)},00`)
+    }
+    salario.value = ''
+})
+
+
+
+
+
+
+//Exercício 01-----------------------------------
 const n1 = document.querySelector('#n1')
 const n2 = document.querySelector('#n2')
 const resultadoEx06 = document.querySelector('#resEx06')

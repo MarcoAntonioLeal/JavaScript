@@ -114,10 +114,40 @@
             <p id="resEx05">Resultado:</p>
         </section>
 
+        <!------------------Parte 2----------------------->
+        <hr>
+        <h2 style="text-align: center;">
+            Faça os exercícios colocando a saída (resultado) no console.log
+        </h2>
         <hr>
 
         <section>
-            <h2>Exercício 06</h2>
+            <h2>Exercício 01</h2>
+            <p>
+                Desafio1 (usa if): Fazer um algoritmo que ao receber o salário atual de um funcionário, calcule o valor do novo salário reajustado de acordo com: 
+                <ul>
+                    <li>
+                        Salário atual abaixo de 500 → ajuste de 15%
+                    </li>
+                    <li>
+                        Salário atual entre 500 e 1000 → ajuste de 10%
+                    </li>
+                    <li>
+                        Salário acima de 1000 → ajuste de 5%
+                    </li>
+                </ul>
+            </p>
+
+            <label for="meuSalario">Valor do salário:</label>
+            <input type="number" name="meuSalario" id="meuSalario" min="0" max="5000">
+
+            <input type="button" value="Calcular" id="btnEx01console">
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Exercício 07</h2>
             <p>
                 Faça um programa que a partir de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar: 
                 <ul>
@@ -155,6 +185,7 @@
             <input type="number" name="numero1" id="numero1">
             <label for="numero2">Segundo número:</label>
             <input type="number" name="numero2" id="numero2">
+            <br>
             <label for="numero3">Terceiro número:</label>
             <input type="number" name="numero3" id="numero3">
 
@@ -171,6 +202,14 @@
             <p>
                 Faça um Programa que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido.
             </p>
+
+            <label for="numero">Escolha um número de 1 a 7</label>
+            <input type="text" name="numero" id="numero" min="1" max="7">
+
+            <input type="button" value="Calcular" id="btnEx08">
+            <input type="button" value="Apagar" id="btnApagar">
+
+            <p id="resEx08">Resultado:</p>
         </section>
     </main>
 </body>
