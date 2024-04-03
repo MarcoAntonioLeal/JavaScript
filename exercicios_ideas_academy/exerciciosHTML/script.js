@@ -75,19 +75,20 @@ botaoEx05.addEventListener('click', () => {
 
 
 //Exercício 01-----------------------------------
-const novoSalario = document.querySelector('#salario')
+const novoSalario = document.querySelector('#meuSalario')
 const botaoEx01Console = document.querySelector('#btnEx01console')
 
-botaoEx05.addEventListener('click', () => {
-    if(salario.value < 500) {
-        console.log = (`Resultado: Seu novo salário é R$ ${(salario.value * 1.15).toFixed(0)},00`)
-
-    } else if (salario.value <= 1000) {
-        console.log = (`Resultado: Seu novo salário é R$ ${(salario.value * 1.1).toFixed(0)},00`)
+botaoEx01Console.addEventListener('click', () => {
+    console.log('não está funcionado')
+    if(novoSalario.value < 500) {
+        console.log = ('oi')
+    } else if (novoSalario.value <= 1000) {
+        console.log = ('ola')
     } else {
-        console.log = (`Resultado: Seu novo salário é R$ ${(salario.value * 1.05).toFixed(0)},00`)
+        console.log = ('Tudo bem')
     }
-    salario.value = ''
+    
+    novoSalario.value = ''
 })
 
 
