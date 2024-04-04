@@ -7,7 +7,7 @@ const botaoEx01 = document.querySelector('#btnEx01')
 botaoEx01.addEventListener('click', () => {
     resultadoEx01.innerText = ` Resultado: O ano que você nasceu é ${ano.value - idade.value}`
 
-    idade.value =''
+    idade.value = ''
 })
 
 //Exercício 02-----------------------------------
@@ -17,7 +17,7 @@ const botaoEx02 = document.querySelector('#btnEx02')
 
 botaoEx02.addEventListener('click', () => {
     resultadoEx02.innerText = `Resultado: ${medidaEmMetros.value} metros tem ${medidaEmMetros.value * 100} centímetros`
-    
+
     medidaEmMetros.value = ''
 })
 
@@ -46,7 +46,7 @@ botaoEx04.addEventListener('click', () => {
     const mediaProva2 = prova2.value * 4
     const mediaProva3 = prova3.value * 6
 
-    resultadoEx04. innerText = `Resultado: A média ponderada entre as notas é ${((mediaProva1 + mediaProva2 + mediaProva3) / 12).toFixed(0)}`
+    resultadoEx04.innerText = `Resultado: A média ponderada entre as notas é ${((mediaProva1 + mediaProva2 + mediaProva3) / 12).toFixed(0)}`
 
     prova1.value = ''
     prova2.value = ''
@@ -59,7 +59,7 @@ const resultadoEx05 = document.querySelector('#resEx05')
 const botaoEx05 = document.querySelector('#btnEx05')
 
 botaoEx05.addEventListener('click', () => {
-    if(salario.value < 500) {
+    if (salario.value < 500) {
         resultadoEx05.innerText = `Resultado: Seu novo salário é R$ ${(salario.value * 1.15).toFixed(2)}`
 
     } else if (salario.value <= 1000) {
@@ -72,11 +72,11 @@ botaoEx05.addEventListener('click', () => {
 })
 
 document.querySelector('#btnApagar').addEventListener('click', () => {
-   resultadoEx01.innerText = 'Resultado:' 
-   resultadoEx02.innerText = 'Resultado:' 
-   resultadoEx03.innerText = 'Resultado:' 
-   resultadoEx04.innerText = 'Resultado:' 
-   resultadoEx05.innerText = 'Resultado:' 
+    resultadoEx01.innerText = 'Resultado:'
+    resultadoEx02.innerText = 'Resultado:'
+    resultadoEx03.innerText = 'Resultado:'
+    resultadoEx04.innerText = 'Resultado:'
+    resultadoEx05.innerText = 'Resultado:'
 })
 
 /*----------------------Parte 2-----------------------------*/
@@ -86,7 +86,7 @@ const novoSalario = document.querySelector('#meuSalario')
 const botaoEx01Console = document.querySelector('#btnEx01console')
 
 botaoEx01Console.addEventListener('click', () => {
-    if(novoSalario.value < 500) {
+    if (novoSalario.value < 500) {
         console.log(`Seu novo salário é R$ ${(novoSalario.value * 1.15).toFixed(2)}`)
     } else if (novoSalario.value <= 1000) {
         console.log(`Seu novo salário é R$ ${(novoSalario.value * 1.1).toFixed(2)}`)
@@ -103,10 +103,10 @@ const botaoEx02Console = document.querySelector('#btnEx02console')
 
 botaoEx02Console.addEventListener('click', () => {
     const mediaNota = (Number(n1.value) + Number(n2.value)) / 2
-    
-    if(mediaNota == 10) {
+
+    if (mediaNota == 10) {
         console.log(`Nota: ${mediaNota} → Aprovado com Distinção`)
-    } else if(mediaNota >= 7) {
+    } else if (mediaNota >= 7) {
         console.log(`Nota: ${mediaNota} → Aprovado`)
     } else {
         console.log(`Nota: ${mediaNota} → Reprovado`)
@@ -122,12 +122,12 @@ const numero3 = document.querySelector('#numero3')
 const botaoEx03Console = document.querySelector('#btnEx03console')
 
 botaoEx03Console.addEventListener('click', () => {
-    if(numero1.value > numero2.value && numero1.value > numero3.value) {
+    if (numero1.value > numero2.value && numero1.value > numero3.value) {
         console.log(`O maior número é o ${numero1.value}`)
 
-    } else if(numero2.value > numero1.value && numero2.value > numero3.value) {
+    } else if (numero2.value > numero1.value && numero2.value > numero3.value) {
         console.log(`O maior número é o ${numero2.value}`)
-        
+
     } else {
         console.log(`O maior número é o ${numero3.value}`)
     }
@@ -137,6 +137,33 @@ botaoEx03Console.addEventListener('click', () => {
 })
 
 //Exercício 04-----------------------------------
+const numeroDaSemana = document.querySelector('#numeroSemana')
+const botaoEx04Console = document.querySelector('#btnEx04console')
 
+function diaSemana(...dia) {
+    if (dia == 1) {
+        return 'Domingo'
+    } else if (dia == 2) {
+        return 'Segunda'
+    } else if (dia == 3) {
+        return 'Terça'
+    } else if (dia == 4) {
+        return 'Quarta'
+    } else if (dia == 5) {
+        return'Quinta'
+    } else if (dia == 6) {
+        return 'Sexta'
+    } else if (dia == 7) {
+        return 'Sábado'
+    }
+}
+
+botaoEx04Console.addEventListener('click', () => {
+    console.log('Você está na(o): ' + diaSemana(numeroDaSemana.value))
+    numeroDaSemana.value = ''
+})
 
 //Exercício 05-----------------------------------
+
+
+//Exercício 06-----------------------------------
