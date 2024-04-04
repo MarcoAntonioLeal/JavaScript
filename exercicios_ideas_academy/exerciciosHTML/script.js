@@ -164,6 +164,28 @@ botaoEx04Console.addEventListener('click', () => {
 })
 
 //Exercício 05-----------------------------------
+const lado1 = document.querySelector('#lado1')
+const lado2 = document.querySelector('#lado2')
+const lado3 = document.querySelector('#lado3')
+const botaoEx05Console = document.querySelector('#btnEx05console')
+
+function ladosDoTriangulo(lado1, lado2, lado3) {
+    if(lado1 == lado2 && lado2 == lado3 && lado1 == lado3) {
+        return 'Triângulo equilátero'
+    } else if (lado1 != lado2 && lado2 != lado3 && lado1 != lado3) {
+        return 'Triângulo escaleno'
+    } else {
+        return 'Triângulo isósceles'
+    }
+}
+
+botaoEx05Console.addEventListener('click', () => {
+    console.log(ladosDoTriangulo(lado1.value, lado2.value, lado3.value))
+
+    lado1.value = ''
+    lado2.value = ''
+    lado3.value = ''
+})
 
 
 //Exercício 06-----------------------------------
