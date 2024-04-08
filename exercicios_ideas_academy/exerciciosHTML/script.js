@@ -189,3 +189,29 @@ botaoEx05Console.addEventListener('click', () => {
 
 
 //Exercício 06-----------------------------------
+const preco1 = document.querySelector('#preco1')
+const preco2 = document.querySelector('#preco2')
+const preco3 = document.querySelector('#preco3')
+const botaoEx06Console = document.querySelector('#btnEx06console')
+
+function precoMaisBarato(preco1, preco2, preco3) {
+    if(preco1 > preco2 && preco1 > preco3) {
+        return preco1
+    } else if (preco2 > preco1 && preco2 > preco3) {
+        return preco2
+    } else {
+        return preco3
+    }
+}
+botaoEx06Console.addEventListener('click', () => {
+    console.log(precoMaisBarato(preco1.value, preco2.value, preco3.value))
+
+    preco1.value = ''
+    preco2.value = ''
+    preco3.value = ''
+})
+
+/*----------------------Parte 3-----------------------------*/
+
+//Exercício 01-----------------------------------
+
