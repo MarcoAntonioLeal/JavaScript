@@ -140,7 +140,7 @@ botaoEx03Console.addEventListener('click', () => {
 const numeroDaSemana = document.querySelector('#numeroSemana')
 const botaoEx04Console = document.querySelector('#btnEx04console')
 
-function diaSemana(...dia) {
+function diaSemana(dia) {
     if (dia == 1) {
         return 'Domingo'
     } else if (dia == 2) {
