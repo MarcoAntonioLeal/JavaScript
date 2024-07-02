@@ -11,4 +11,4 @@ function classificacaoLadoTriangulo(lado1, lado2, lado3) {
         return 'Esse triângulo tem os três lados diferentes portanto ele é escaleno';
     }
 }
-console.log(classificacaoLadoTriangulo(50, 40, 50));
+console.log(classificacaoLadoTriangulo(50, 50, 50));
