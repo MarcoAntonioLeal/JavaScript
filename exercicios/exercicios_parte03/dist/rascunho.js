@@ -1,4 +1,6 @@
-/*01) Escreva um programa que solicite ao usuário dois números e exiba a soma, subtração, multiplicação e divisão entre eles.
+/*
+Exercícios de matemática
+01) Escreva um programa que solicite ao usuário dois números e exiba a soma, subtração, multiplicação e divisão entre eles.
 
 02) Escreva um programa que calcule a média aritmética de dois números.
 
@@ -27,4 +29,6 @@
 14) Escreva um programa que leia a posição x e y de dois pontos no plano cartesiano e calcule a distância entre ambos.
 
 15) Crie um programa que solicite ao usuário o valor do raio de uma esfera e calcule e exiba o seu volume.
+
+Exercícios de string
 */
