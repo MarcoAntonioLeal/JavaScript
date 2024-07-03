@@ -2,11 +2,14 @@
 
 J = C × i × t (simples)
 M = C * (1 + i)^t. (compostos)*/
-function jurosSimples(capital, taxa, tempo) {
-    console.log(capital * taxa * tempo);
+
+function jurosSimples(capital:number, taxa:number, tempo:number) {
+    console.log(capital * taxa * tempo)
 }
-function jurosCompostos(capital, taxa, tempo) {
-    console.log(capital + ((1 + taxa) ** tempo));
+
+function jurosCompostos(capital:number, taxa:number, tempo:number) {
+    console.log(capital + ((1 + taxa) ** tempo))
 }
-jurosSimples(1000, 0.2, 30);
-jurosCompostos(1000, 0.2, 30);
+
+jurosSimples(1000, 0.2, 30)
+jurosCompostos(1000, 0.2, 30)
