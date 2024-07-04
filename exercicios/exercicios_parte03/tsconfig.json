@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "outDir": "dit",
+        "target": "ES6",
+    }
+}
