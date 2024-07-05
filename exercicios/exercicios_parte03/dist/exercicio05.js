@@ -17,7 +17,7 @@ function classificacaoIMC(IMC) {
     }
 }
 function calculoDoIMC(peso, altura) {
-    const valorIMC = (peso / (Math.pow(altura, 2)));
+    const valorIMC = (peso / (altura ** 2));
     console.log(`IMC: ${valorIMC.toFixed(2)} - ${classificacaoIMC(valorIMC)}`);
 }
 calculoDoIMC(75, 1.8);
