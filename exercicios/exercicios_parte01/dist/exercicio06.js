@@ -6,7 +6,7 @@ function jurosSimples(capital, taxa, tempo) {
     console.log(capital * taxa * tempo);
 }
 function jurosCompostos(capital, taxa, tempo) {
-    console.log(capital + ((1 + taxa) ** tempo));
+    console.log(capital + (Math.pow((1 + taxa), tempo)));
 }
 jurosSimples(1000, 0.2, 30);
 jurosCompostos(1000, 0.2, 30);

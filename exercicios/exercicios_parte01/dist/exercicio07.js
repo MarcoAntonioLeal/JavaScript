@@ -3,7 +3,7 @@
 Δ = b2 – 4ac
 x = (– b ± √Δ) / 2.a*/
 function valorDasRaizes(a, b, c) {
-    const delta = (b ** 2) - (4 * a * c);
+    const delta = (Math.pow(b, 2)) - (4 * a * c);
     if (delta > 0 || delta == 0) {
         return [
             ((-b + Math.sqrt(delta)) / (2 * a)).toFixed(2),

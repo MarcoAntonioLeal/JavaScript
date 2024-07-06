@@ -5,3 +5,22 @@ Exemplo:
 String: “10 20 20 8 25 3 0 30 1”
 Retorno: [3, 7] (Significa que ele bateu três vezes seu recorde de melhor pontuação e a pior pontuação
 aconteceu no sétimo jogo.)*/
+
+const minhaString:number[] = [10, 20, 25, 8, 30, 3, 0, 35, 1]
+let pontuacao = 0
+let numJogosRecorde = 0
+
+for(let c = 0; c <= minhaString.length; c++) {
+    if(minhaString[c] > pontuacao) {
+        pontuacao = minhaString[c]
+        numJogosRecorde += 1
+    }
+}
+
+let teste = minhaString.map(Number).reduce((a, b) => {
+    return (Math.min(a, b))
+})
+
+
+console.log(numJogosRecorde - 1)
+console.log(teste)
