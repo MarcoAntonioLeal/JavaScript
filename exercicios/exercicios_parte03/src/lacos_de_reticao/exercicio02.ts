@@ -1,7 +1,7 @@
 /*02) Escreva um programa que exiba todos os números de 1 a 10*/
 
 //Por while
-let i = 0
+let i:number = 0
 
 while(i <= 100) {
     console.log(i)
@@ -9,6 +9,6 @@ while(i <= 100) {
 }
 
 //Por for
-for(let i = 0; i <= 100; i++) {
+for(let i:number = 0; i <= 100; i++) {
     console.log(i)
 }
