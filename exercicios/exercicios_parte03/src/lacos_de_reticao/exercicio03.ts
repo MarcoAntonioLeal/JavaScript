@@ -9,6 +9,6 @@ while(i <= 100) {
 }
 
 //Por for
-for(let i = 0; i <= 100; i += 2) {
+for(let i:number = 0; i <= 100; i += 2) {
     console.log(i)
 }
