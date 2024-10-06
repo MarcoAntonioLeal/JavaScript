@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.79);
+}
+
+body {background-color: lightblue;}
+
+main {
+    background-color:white;
+    width: 1000px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.79);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4)
+}
+
+hr {
+  border: 2px solid; 
+}
+
+section {
+    padding: 20px;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+}
