@@ -2,7 +2,12 @@
 
 Δ = b2 – 4ac
 x = (– b ± √Δ) / 2.a*/
-async function delta(a, b, c) {
+
+
+
+
+
+/*async function delta(a, b, c) {
     const delta = Math.pow(b, 2) - (4 * a * c);
     if (delta < 0) {
         return 'Delta negativo, equação sem raízes reais';
@@ -17,4 +22,4 @@ async function raizes(a, b, c) {
     const raiz2 = ((-b - Math.sqrt(Number(valorDelta))) / (2 * a));
     console.log(raiz1, raiz2);
 }
-raizes(1, 6, 5);
+raizes(1, 6, 5);*/
