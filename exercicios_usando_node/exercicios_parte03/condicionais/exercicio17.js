@@ -1,0 +1,1 @@
+/*Escreva um programa que solicite a altura e o peso de uma pessoa e calcule o seu índice de massa corporal (IMC) exibindo a categoria correspondente (abaixo do peso, peso normal, sobrepeso, obesidade, obesidade grave) */

@@ -1,0 +1,1 @@
+/*Faça um programa que leia as notas de duas provas e informe se o aluno foi aprovado (média 6.0) */

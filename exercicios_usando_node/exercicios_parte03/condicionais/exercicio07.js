@@ -1,0 +1,1 @@
+/*Faça um programa que leia as notas de duas provas, calcule a média aritmética simples, e informe se o aluno foi aprovado (média 6.0) */

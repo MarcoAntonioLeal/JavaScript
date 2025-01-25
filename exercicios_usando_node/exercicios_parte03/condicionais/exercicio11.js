@@ -1,0 +1,1 @@
+/*Faça um programa que leia a idade de três pessoas e informe se alguma delas é maior de idade (18 anos) */
