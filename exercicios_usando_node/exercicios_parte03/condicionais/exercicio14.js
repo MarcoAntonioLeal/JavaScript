@@ -1,1 +1,1 @@
-/*Faça um programa que leia a idade de uma pessoa e informe se ela não está apta a votar (idade inferior a 16 anos), se está apta a votar, porém não é obrigada(16, 17 anos, ou idade iguak ou suoerior a 70 anos), ou se é obrigada(18 a 69 anos) */
+/*Faça um programa que leia a idade de uma pessoa e informe se ela não está apta a votar (idade inferior a 16 anos), se está apta a votar, porém não é obrigada (16, 17 anos, ou idade igual ou superior a 70 anos), ou se é obrigada (18 a 69 anos) */

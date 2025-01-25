@@ -1,1 +1,1 @@
-/*Faça um programa que solicite o nome de um dia da semana e exiba se é um dia útil (segunda a sexta-feira) ou um dia de fim de smena (sábado e domingo) */
+/*Faça um programa que solicite o nome de um dia da semana e exiba se é um dia útil (segunda a sexta-feira) ou um dia de fim de semana (sábado e domingo) */
