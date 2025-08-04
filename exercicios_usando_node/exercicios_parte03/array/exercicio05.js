@@ -2,12 +2,10 @@
 
 const primeiroArray = [5, 6, 8, 7, 5, 1];
 const segundoArray = [2, 4, 1, 20, 35, 22];
+const novoArray = []
 
-//1ª forma de fazer
-let somaPrimeiroArray = 0
-let somaSegundoArray = 0
-let novoArray = []
-let somaNovoArray = 0
+for(let i = 0; i < primeiroArray.length; i++) {
+    novoArray.push(primeiroArray[i] + segundoArray[i])
+}
 
-
-//2ª forma de fazer
+console.log(novoArray)
